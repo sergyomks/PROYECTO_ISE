@@ -102,7 +102,7 @@
 
     // Enviar mensaje al backend Flask
     function sendMessage(message) {
-      fetch('http://127.0.0.1:5000/send_message', {
+      fetch('https://pychat-marcas.onrender.com/send_message', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message, senderId })
@@ -110,4 +110,5 @@
     }
   </script>
 </body>
+
 </html>
